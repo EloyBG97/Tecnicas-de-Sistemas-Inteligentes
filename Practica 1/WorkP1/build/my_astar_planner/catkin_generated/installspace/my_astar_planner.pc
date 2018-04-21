@@ -1,0 +1,8 @@
+prefix=/media/eloy/Datos/UGR/3º Carrera/2ºCuatrimestre (CSI)/Tecnicas de Sistemas Inteligentes/Practica/Practica 1/WorkP1/install
+
+Name: my_astar_planner
+Description: Description of my_astar_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L/media/eloy/Datos/UGR/3º Carrera/2ºCuatrimestre (CSI)/Tecnicas de Sistemas Inteligentes/Practica/Practica 1/WorkP1/install/lib 
+Requires: 

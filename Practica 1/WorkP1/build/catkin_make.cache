@@ -1,0 +1,2 @@
+my_astar_planner
+-DCATKIN_DEVEL_PREFIX=/media/eloy/Datos/UGR/3º Carrera/2ºCuatrimestre (CSI)/Tecnicas de Sistemas Inteligentes/Practica/Practica 1/WorkP1/devel -DCMAKE_INSTALL_PREFIX=/media/eloy/Datos/UGR/3º Carrera/2ºCuatrimestre (CSI)/Tecnicas de Sistemas Inteligentes/Practica/Practica 1/WorkP1/install -G Unix Makefiles
