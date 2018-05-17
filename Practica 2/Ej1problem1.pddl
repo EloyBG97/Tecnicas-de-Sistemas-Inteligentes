@@ -1,11 +1,10 @@
-(define (problem BelkanV0)
+(define (problem Belkan1)
 
-(:domain BELKAN)
+(:domain BELKANV1)
 
 (:objects
-    R1 - Robot
-    P1 P2 P3 P4 P5 - Personaje
-    O1 O2 O3 O4 O5 - Objeto
+    dicaprio bruja principe profesor princesa - Personaje
+    oscar manzanas oro algoritmo rosas - Objeto
     Z1 Z2 Z3 Z4 Z5 - Zona
     Z6 Z7 Z8 Z9 Z10 - Zona
     Z11 Z12 Z13 Z14 Z15 - Zona
@@ -14,6 +13,7 @@
 )
 
 (:init
+
     ;;Al Norte de Z_{i} está Z_{j}
     (AlNorteDe Z21 Z16)
     (AlNorteDe Z16 Z11)
@@ -101,35 +101,35 @@
     (AlOesteDe Z24 Z23)
     (AlOesteDe Z23 Z22)
     (AlOesteDe Z22 Z21)
-
+    
     ;;Situacion de los personajes
-    (DondePersonaje P1 Z4)
-    (DondePersonaje P2 Z11)
-    (DondePersonaje P3 Z24)
-    (DondePersonaje P4 Z17)
-    (DondePersonaje P5 Z19)
+    (DondePersonaje dicaprio Z9)
+    (DondePersonaje bruja Z1)
+    (DondePersonaje principe Z25)
+    (DondePersonaje profesor Z21)
+    (DondePersonaje princesa Z17)
     
     ;;Situacion de los objetos
-    (DondeObjeto O1 Z23)
-    (DondeObjeto O2 Z18)
-    (DondeObjeto O3 Z21)
-    (DondeObjeto O4 Z11)
-    (DondeObjeto O5 Z5)
+    (DondeObjeto oscar Z16)
+    (DondeObjeto manzanas Z23)
+    (DondeObjeto oro Z2)
+    (DondeObjeto algoritmo Z13)
+    (DondeObjeto rosas Z10)
 
     ;;Situacion y Orientacion del Robot
-    (ZonaActual R1 Z3)
-    (OrientadoSur R1)
+    (ZonaActual  Z4)
+    (OrientadoSur )
 
-    (ManoVacia R1)
+    (ManoVacia )
 )
 
 (:goal
     (and
-        (TieneObjeto1 P1 O1)
-        (TieneObjeto1 P2 O2)
-        (TieneObjeto1 P3 O3)
-        (TieneObjeto1 P4 O4)
-        (TieneObjeto1 P5 O5)
+        (TieneObjeto1 dicaprio oscar)
+        (TieneObjeto1 bruja manzanas)
+        (TieneObjeto1 principe oro)
+        (TieneObjeto1 profesor algoritmo)
+        (TieneObjeto1 princesa rosas)
     )
 )
 
